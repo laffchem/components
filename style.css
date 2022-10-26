@@ -222,7 +222,7 @@ td {
 
 /* Pagination */
 .pagination {
-  width: 800px;
+  width: 550px;
   margin-top: 100px;
   justify-content: center;
   display: flex;
@@ -231,34 +231,61 @@ td {
   padding: 20px;
   align-items: center;
 }
-.page-num {
-}
+
 .btn-p {
   height: 40px;
   width: 40px;
   font-size: 16px;
-  padding: 16px;
   border-radius: 50%;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  box-shadow: 0, 2px, 8px rgba(0, 0, 0, 0.25);
 }
 
-.btn-p-icon {
-}
 .btn--left {
+  height: 52px;
+  width: 52px;
+  top: 50%;
   position: absolute;
   left: 0;
 }
 .btn--right {
+  height: 52px;
+  width: 52px;
+  top: 50%;
   position: absolute;
   right: 0;
 }
-.btn--icon {
+.btn-icon {
   height: 24px;
   width: 24px;
   stroke: #087f5b;
+}
+
+.on-page {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+.btn-nav {
+  border: 1px solid #087f5b;
+}
+
+/* Button Actions */
+.btn-p:hover,
+.btn-p:hover .btn-icon {
+  background-color: #e6fcf5;
+  color: #343a40;
+  stroke: #343a40;
+}
+
+.btn-p:active,
+.btn-p:active .btn-icon {
+  background-color: #087f5b;
+  color: #fff;
+  stroke: #fff;
 }
